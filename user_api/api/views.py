@@ -4,5 +4,5 @@ from .models import Student
 # Create your views here.
 
 class StudentViewSet(viewsets.ModelViewSet):
-    queryset = Student.objects.all().order_by('name')
+    queryset = Student.objects.all().order_by('age')
     serializer_class  = StudentSerializer
